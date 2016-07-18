@@ -20,7 +20,7 @@ require('babel-core/register');
 
 // 各个模块
 const apiRouter = require('./router/api-router');
-const tool = require('./tool');
+const tool = require('./util/tool');
 const config = require('./config');
 
 // 设置 view 引擎
@@ -74,5 +74,7 @@ app.use((req, res, next) => {
   res.sendFile(path.dirname(require.main.filename) + '/public/index.html');
   // res.status(404);
 });
+
+console.log("Version: ",config.version,"\n");
 
 module.exports = app;

@@ -11,6 +11,8 @@
 
 let config = {
 
+  version: '0.0.1',
+
   // 服务端 host
   host: 'http://localhost:3000',
 

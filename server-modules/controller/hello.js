@@ -9,7 +9,7 @@
 
 'use strict';
 
-const tool = require('../tool');
+const tool = require('../util/tool');
 
 let pub = {};
 
